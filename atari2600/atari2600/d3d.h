@@ -1,5 +1,5 @@
-#ifndef _D3DCLASS_H_
-#define _D3DCLASS_H_
+#ifndef _D3D_H_
+#define _D3D_H_
 
 // LINKING 
 #pragma comment(lib, "d3d11.lib")
@@ -11,12 +11,12 @@
 #include <directxmath.h>
 using namespace DirectX;
 
-class D3DClass
+class D3D
 {
 public:
-	D3DClass();
-	D3DClass(const D3DClass&);
-	~D3DClass();
+	D3D();
+	D3D(const D3D&);
+	~D3D();
 
 	bool Initialize(int, int, bool, HWND, bool, float, float);
 	void Shutdown();

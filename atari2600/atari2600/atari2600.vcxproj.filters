@@ -30,7 +30,7 @@
     <ClCompile Include="emu.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="d3dclass.cpp">
+    <ClCompile Include="d3d.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,7 +47,7 @@
     <ClInclude Include="inputclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="d3dclass.h">
+    <ClInclude Include="d3d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

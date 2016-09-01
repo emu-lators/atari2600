@@ -161,7 +161,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cpu.cpp" />
-    <ClCompile Include="d3dclass.cpp" />
+    <ClCompile Include="d3d.cpp" />
     <ClCompile Include="emu.cpp" />
     <ClCompile Include="inputclass.cpp" />
     <ClCompile Include="main.cpp" />
@@ -169,7 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cpu.h" />
-    <ClInclude Include="d3dclass.h" />
+    <ClInclude Include="d3d.h" />
     <ClInclude Include="emu.h" />
     <ClInclude Include="inputclass.h" />
     <ClInclude Include="tia.h" />

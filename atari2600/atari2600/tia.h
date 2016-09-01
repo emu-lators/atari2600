@@ -3,7 +3,7 @@
 #ifndef _TIA_unit_H
 #define _TIA_unit_H
 
-#include "d3dclass.h"
+#include "d3d.h"
 
 // GLOBALS 
 const bool FULL_SCREEN = false;
@@ -23,7 +23,7 @@ public:
 	bool Frame();
 
 private:
-	D3DClass* m_Direct3D;
+	D3D* m_Direct3D;
 
 	bool Render();
 

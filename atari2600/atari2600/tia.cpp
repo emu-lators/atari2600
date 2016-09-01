@@ -18,7 +18,7 @@ bool TIA::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	bool result;
 
 	// Create the Direct3D object.
-	m_Direct3D = new D3DClass;
+	m_Direct3D = new D3D;
 	if (!m_Direct3D)
 	{
 		return false;
