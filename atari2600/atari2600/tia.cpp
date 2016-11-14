@@ -35,7 +35,6 @@ bool TIA::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	return true;
 }
 
-
 void TIA::Shutdown()
 {
 	// Release the D3D object.
@@ -48,7 +47,6 @@ void TIA::Shutdown()
 
 	return;
 }
-
 
 bool TIA::Frame()
 {
@@ -64,7 +62,6 @@ bool TIA::Frame()
 
 	return true;
 }
-
 
 bool TIA::Render()
 {

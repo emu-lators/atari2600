@@ -1,8 +1,4 @@
-////////////////////////////////////////////////////////////////////////////////
-// Filename: Emulator.cpp
-////////////////////////////////////////////////////////////////////////////////
 #include "emu.h"
-
 
 Emulator::Emulator()
 {
@@ -10,16 +6,13 @@ Emulator::Emulator()
 	m_Graphics = 0;
 }
 
-
 Emulator::Emulator(const Emulator& other)
 {
 }
 
-
 Emulator::~Emulator()
 {
 }
-
 
 bool Emulator::Initialize()
 {
@@ -61,7 +54,6 @@ bool Emulator::Initialize()
 	return true;
 }
 
-
 void Emulator::Shutdown()
 {
 	// Release the graphics object.
@@ -84,7 +76,6 @@ void Emulator::Shutdown()
 
 	return;
 }
-
 
 void Emulator::Run()
 {
@@ -125,7 +116,6 @@ void Emulator::Run()
 	return;
 }
 
-
 bool Emulator::Frame()
 {
 	bool result;
@@ -146,7 +136,6 @@ bool Emulator::Frame()
 
 	return true;
 }
-
 
 LRESULT CALLBACK Emulator::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LPARAM lparam)
 {
@@ -175,7 +164,6 @@ LRESULT CALLBACK Emulator::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, L
 	}
 	}
 }
-
 
 void Emulator::InitializeWindows(int& screenWidth, int& screenHeight)
 {
@@ -257,7 +245,6 @@ void Emulator::InitializeWindows(int& screenWidth, int& screenHeight)
 	return;
 }
 
-
 void Emulator::ShutdownWindows()
 {
 	// Show the mouse cursor.
@@ -282,7 +269,6 @@ void Emulator::ShutdownWindows()
 
 	return;
 }
-
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT umessage, WPARAM wparam, LPARAM lparam)
 {

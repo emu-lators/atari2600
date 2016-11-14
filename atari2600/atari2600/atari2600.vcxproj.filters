@@ -18,20 +18,20 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cpu.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tia.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="inputclass.cpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="d3d.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="emu.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="d3d.cpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="tia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -44,10 +44,10 @@
     <ClInclude Include="emu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inputclass.h">
+    <ClInclude Include="d3d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="d3d.h">
+    <ClInclude Include="input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

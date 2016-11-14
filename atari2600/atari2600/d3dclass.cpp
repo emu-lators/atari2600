@@ -1,6 +1,9 @@
-#include "d3d.h"
+////////////////////////////////////////////////////////////////////////////////
+// Filename: d3dclass.cpp
+////////////////////////////////////////////////////////////////////////////////
+#include "d3dclass.h"
 
-D3D::D3D()
+D3DClass::D3DClass()
 {
 	m_swapChain = 0;
 	m_device = 0;
@@ -12,15 +15,18 @@ D3D::D3D()
 	m_rasterState = 0;
 }
 
-D3D::D3D(const D3D& other)
+
+D3DClass::D3DClass(const D3DClass& other)
 {
 }
 
-D3D::~D3D()
+
+D3DClass::~D3DClass()
 {
 }
 
-bool D3D::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hwnd, bool fullscreen,
+
+bool D3DClass::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hwnd, bool fullscreen,
 	float screenDepth, float screenNear)
 {
 	HRESULT result;
@@ -42,8 +48,9 @@ bool D3D::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hwnd, b
 	D3D11_VIEWPORT viewport;
 	float fieldOfView, screenAspect;
 
+
 	// Store the vsync setting.
-	m_vsync = vsync;
+	m_vsync_enabled = vsync;
 
 	// Create a DirectX graphics interface factory.
 	result = CreateDXGIFactory(__uuidof(IDXGIFactory), (void**)&factory);
@@ -343,7 +350,7 @@ bool D3D::Initialize(int screenWidth, int screenHeight, bool vsync, HWND hwnd, b
 }
 
 
-void D3D::Shutdown()
+void D3DClass::Shutdown()
 {
 	// Before shutting down set to windowed mode or when you release the swap chain it will throw an exception.
 	if (m_swapChain)
@@ -403,7 +410,7 @@ void D3D::Shutdown()
 }
 
 
-void D3D::BeginScene(float red, float green, float blue, float alpha)
+void D3DClass::BeginScene(float red, float green, float blue, float alpha)
 {
 	float color[4];
 
@@ -424,7 +431,7 @@ void D3D::BeginScene(float red, float green, float blue, float alpha)
 }
 
 
-void D3D::EndScene()
+void D3DClass::EndScene()
 {
 	// Present the back buffer to the screen since rendering is complete.
 	if (m_vsync_enabled)
@@ -442,40 +449,40 @@ void D3D::EndScene()
 }
 
 
-ID3D11Device* D3D::GetDevice()
+ID3D11Device* D3DClass::GetDevice()
 {
 	return m_device;
 }
 
 
-ID3D11DeviceContext* D3D::GetDeviceContext()
+ID3D11DeviceContext* D3DClass::GetDeviceContext()
 {
 	return m_deviceContext;
 }
 
 
-void D3D::GetProjectionMatrix(XMMATRIX& projectionMatrix)
+void D3DClass::GetProjectionMatrix(XMMATRIX& projectionMatrix)
 {
 	projectionMatrix = m_projectionMatrix;
 	return;
 }
 
 
-void D3D::GetWorldMatrix(XMMATRIX& worldMatrix)
+void D3DClass::GetWorldMatrix(XMMATRIX& worldMatrix)
 {
 	worldMatrix = m_worldMatrix;
 	return;
 }
 
 
-void D3D::GetOrthoMatrix(XMMATRIX& orthoMatrix)
+void D3DClass::GetOrthoMatrix(XMMATRIX& orthoMatrix)
 {
 	orthoMatrix = m_orthoMatrix;
 	return;
 }
 
 
-void D3D::GetVideoCardInfo(char* cardName, int& memory)
+void D3DClass::GetVideoCardInfo(char* cardName, int& memory)
 {
 	strcpy_s(cardName, 128, m_videoCardDescription);
 	memory = m_videoCardMemory;

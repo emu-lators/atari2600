@@ -1,17 +1,13 @@
-#pragma once
-// Filename: EMU.h
 #ifndef _EMUL_H_
 #define _EMUL_H_
 
-// PRE-PROCESSING DIRECTIVES
-//#define WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
 
 #include <windows.h>
-#include "inputclass.h"
+#include "input.h"
 #include "tia.h"
 #include "cpu.h"
 
-// FUNCTION PROTOTYPES 
 static LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
 class Emulator
