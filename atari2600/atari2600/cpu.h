@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef _MICRO_6502_H
 #define _MICRO_6502_H
 

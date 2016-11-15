@@ -160,6 +160,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bitmap.cpp" />
     <ClCompile Include="cpu.cpp" />
     <ClCompile Include="d3d.cpp" />
     <ClCompile Include="emu.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="tia.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bitmap.h" />
     <ClInclude Include="cpu.h" />
     <ClInclude Include="d3d.h" />
     <ClInclude Include="emu.h" />

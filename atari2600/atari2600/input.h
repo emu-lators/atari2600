@@ -1,12 +1,12 @@
 #ifndef _INPUT_H_
 #define _INPUT_H_
 
-class InputClass
+class Input
 {
 public:
-	InputClass();
-	InputClass(const InputClass&);
-	~InputClass();
+	Input();
+	Input(const Input&);
+	~Input();
 
 	void Initialize();
 

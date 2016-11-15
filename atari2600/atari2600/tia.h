@@ -1,11 +1,9 @@
-#pragma once
-
 #ifndef _TIA_unit_H
 #define _TIA_unit_H
 
 #include "d3d.h"
+#include "bitmap.h"
 
-// GLOBALS 
 const bool FULL_SCREEN = false;
 const bool VSYNC_ENABLED = true;
 const float SCREEN_DEPTH = 1000.0f;
@@ -26,7 +24,7 @@ private:
 	D3D* m_Direct3D;
 
 	bool Render();
-
+	Bitmap* m_Bitmap;
 };
 
 #endif // !TIA_unit
